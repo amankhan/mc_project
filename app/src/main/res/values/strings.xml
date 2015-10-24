@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CanvasBack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_sendtext">Send Text</string>
+    <string name="action_memes">Memes</string>
+    <string name="action_ragecomics">Rage Comics</string>
+    <string name="action_gallerypic">Gallery</string>
+    <string name="action_webpic">Search Web</string>
+
+
+
+    <string name="title_activity_otp">OTP</string>
+    <string name="title_activity_user_messages">UserMessages</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
