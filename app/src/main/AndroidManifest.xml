@@ -10,11 +10,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".OTP"
@@ -22,11 +17,40 @@
         </activity>
         <activity
             android:name=".UserList"
-            android:label="@string/title_activity_user_list" >
+            android:label="UserList" >
         </activity>
         <activity
             android:name=".UserMessages"
             android:label="@string/title_activity_user_messages" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Memes"
+            android:label="@string/title_activity_memes" >
+            android:parentActivityName="com.example.aman.chatapplication.UserMessages" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aman.chatapplication.UserMessages" />
+        </activity>
+        <activity
+            android:name=".RageComics"
+            android:label="@string/title_activity_rage_comics" >
+            android:parentActivityName="com.example.aman.chatapplication.RageComics" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aman.chatapplication.UserMessages" />
+        </activity>
+        <activity
+            android:name=".Message"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name=".CanvasArea"
+            android:label="@string/title_activity_text_area" >
         </activity>
     </application>
 

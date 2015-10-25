@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aman.chatapplication.Memes"
+    android:id="@+id/rellayout3">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar">
+    </include>
+    <EditText
+        android:inputType="textMultiLine"
+    android:lines="8"
+    android:minLines="1"
+    android:gravity="top|left"
+    android:maxLines="10"
+    android:layout_height="280dp"
+    android:layout_width="fill_parent"
+    android:scrollbars="vertical"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/edittext1"
+        android:hint="Enter Message" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/sendbtn"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

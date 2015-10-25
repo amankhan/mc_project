@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">CanvasBack</string>
-    <string name="hello_world">Hello world!</string>
+
     <string name="action_sendtext">Send Text</string>
     <string name="action_memes">Memes</string>
     <string name="action_ragecomics">Rage Comics</string>
@@ -11,8 +11,14 @@
 
 
 
-    <string name="title_activity_otp">OTP</string>
-    <string name="title_activity_user_messages">UserMessages</string>
+    <string name="title_activity_otp">Verify OTP</string>
+    <string name="title_activity_user_messages">User Messages</string>
+    <string name="title_activity_memes">Memes</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_rage_comics">RageComics</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_text_area">TextArea</string>
 
 </resources>

@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
 
         android:text="Proceed"
-        android:id="@+id/button"/>
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

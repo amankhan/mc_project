@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.aman.chatapplication.Memes"
+        android:id="@+id/rellayout2">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar">
+        </include>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageButton5"
+            android:src="@drawable/comic1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/tool_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageButton6"
+            android:src="@drawable/comic2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/imageButton5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageButton7"
+            android:src="@drawable/comic2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/imageButton6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+</ScrollView>
