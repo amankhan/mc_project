@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.graphics.Bitmap;
@@ -203,6 +204,11 @@ public class UserList extends Activity {
         protected void onPostExecute(Cursor result) {
             // Setting the cursor containing contacts to listview
             mAdapter.swapCursor(result);
+            //for demo purpose only
+            Intent myIntent = new Intent(UserList.this, UserMessages.class);
+            myIntent.putExtra("user", "messsage");
+
+            startActivity(myIntent);
         }
     }
 

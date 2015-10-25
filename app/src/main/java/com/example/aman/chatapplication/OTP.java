@@ -20,13 +20,14 @@ public class OTP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
         otpbutton = (Button)findViewById(R.id.authbutton);
         otpbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(OTP.this, UserList.class);
                 myIntent.putExtra("user", "otp");
-                //A function to authenticate user? Maybe
+                //A function to authenticate user
+                //if(verified)
                 startActivity(myIntent);
 
             }
@@ -35,8 +36,7 @@ public class OTP extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_ot, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

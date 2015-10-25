@@ -1,5 +1,6 @@
 package com.example.aman.chatapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -7,19 +8,23 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
 
-public class UserMessages extends AppCompatActivity {
+public class UserMessages extends Activity {
     private static int RESULT_LOAD_IMAGE = 50;
     private static final int SELECT_PHOTO = 100;
     Bitmap thumbnail = null;
-
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        //setSupportActionBar(toolbar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_messages);
     }
